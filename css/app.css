@@ -755,8 +755,8 @@ form div.required label.control-label:after {
 .main-container {
   position: relative;
   height: calc(100% - 60px);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  /*overflow: auto;
+  -webkit-overflow-scrolling: touch;*/
 }
 @media only screen and (min-width: 992px) {
   .main-container {
