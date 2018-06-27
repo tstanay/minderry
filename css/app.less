@@ -937,7 +937,7 @@ form div.required label.control-label:after {
   margin-top: 4px;
 }
 .btn-all{
-  background: @btn-list-maincolor;
+  background: transparent;
   border: solid 1px @btn-list-maincolor;
   box-sizing: border-box;
   display: inline-block;
@@ -982,7 +982,7 @@ form div.required label.control-label:after {
       -moz-transition: background 1s ease-out;
       -o-transition: background 1s ease-out;
       transition: background 1s ease-out;
-      &:hover{
+      &:hover, &.active{
         color: #fff;
         background: @btn-list-maincolor;
       }
