@@ -977,3 +977,51 @@ form div.required label.control-label:after {
   padding-left: 5px;
   display: inline-block;
 }
+/*---*/
+.table.table-clients {
+  overflow: hidden;
+}
+.table-clients td,
+.table-clients th {
+  border-top: 0;
+}
+.table-clients tr td {
+  width: 12%;
+  display: inline-block;
+}
+.table-clients thead tr {
+  background: transparent;
+  box-shadow: none;
+  display: block;
+  font-size: 0;
+}
+.table-clients thead tr td {
+  color: #838383;
+  font-size: 15px;
+  font-weight: 400;
+}
+.table-clients tbody tr {
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px 0 rgba(123, 123, 123, 0.15);
+  font-size: 0rem;
+  background-color: #fff;
+}
+.table-clients tbody tr td {
+  background-color: #fff;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 300;
+}
+.table-clients tbody tr td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-color: transparent;
+}
+.table-clients tbody tr td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-color: transparent;
+}
