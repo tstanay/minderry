@@ -1066,14 +1066,19 @@ form div.required label.control-label:after {
 }
 .dropdown-menu-edit .dropdown-menu-list {
   position: absolute;
-  top: 18px;
-  left: -118px;
+  top: 12px;
+  left: -129px;
   background: #fff;
-  padding: 10px;
   box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
 }
-.dropdown-menu-edit .dropdown-menu-list a:hover {
+.dropdown-menu-edit .dropdown-menu-list a {
   color: #838383;
+  font-size: 14px;
+  padding: 15px;
+  display: block;
+}
+.dropdown-menu-edit .dropdown-menu-list a:hover {
+  background: #f7f7f7;
 }
 .i-group-pages {
   text-align: center;
