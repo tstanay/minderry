@@ -961,16 +961,26 @@ form div.required label.control-label:after {
   border-radius: 4px;
 }
 /*----*/
+.active-status,
+.inactive-status,
+.status-interactive {
+  display: inline-block;
+}
+.active-status,
+.status-interactive {
+  border-radius: 18px;
+  padding: 5px 16px;
+}
 .active-status {
   color: #fff;
-  padding: 5px 16px;
   background: #62b773;
-  display: inline-block;
-  border-radius: 18px;
 }
 .inactive-status {
   padding-left: 5px;
-  display: inline-block;
+}
+.status-interactive {
+  color: #a1a0a0;
+  background: #eeeeee;
 }
 /*---*/
 .table.table-clients {
