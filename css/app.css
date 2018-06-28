@@ -688,11 +688,6 @@ form div.required label.control-label:after {
   border: solid 3px #dedede;
   box-sizing: border-box;
 }
-@media only screen and (min-width: 992px) {
-  .header-container {
-    margin-left: 200px;
-  }
-}
 .sidebar-container {
   background: #fff;
   color: #8e8e8e;
@@ -703,22 +698,22 @@ form div.required label.control-label:after {
   width: 220px;
 }
 .layout-container .sidebar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 220px;
   height: 100%;
   z-index: 40;
-}
-.sidebar-container .d-inline-block {
-  width: 61%;
-  box-sizing: border-box;
+  float: left;
 }
 .brand-header {
   height: 60px;
   border-bottom: solid 1px #f0f0f0;
   text-align: center;
+  float: left;
+  width: 220px;
+  box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
+}
+.d-inline-block {
+  width: 61%;
+  box-sizing: border-box;
 }
 .sidebar-content {
   padding: 29px 0 0 0;
@@ -1070,4 +1065,15 @@ form div.required label.control-label:after {
 }
 .dropdown-menu-edit .dropdown-menu-list a:hover {
   color: #838383;
+}
+.i-group-pages {
+  text-align: center;
+}
+.i-group-pages .btn-group-pages {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 11px;
+}
+.i-group-pages .cardbox-main-title {
+  margin-top: 11px;
 }
