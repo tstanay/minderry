@@ -688,13 +688,13 @@ form div.required label.control-label:after {
     font-size: 13px;
     color: #8f8f8f;
   }
-  nav > ul > li > a > .header-user-image {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: solid 3px #dedede;
-    box-sizing: border-box;
-  }
+}
+.header-user-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 3px #dedede;
+  box-sizing: border-box;
 }
 @media only screen and (min-width: 992px){
   .header-container {
@@ -1019,8 +1019,7 @@ form div.required label.control-label:after {
     border-top: 0;
   }
   tr td{
-    width: 12%;
-
+    width: 13%;
     display: inline-block;
   }
   thead tr{
@@ -1058,17 +1057,46 @@ form div.required label.control-label:after {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
     border-color: transparent;
+    float: right;
+  }
+  .td-edit{
+    text-align: right;
+    padding: 1.5rem 0.95rem .95rem .95rem;
+    width: 100px;
+  }
+  .tb-social-networks {
+    text-align: center;
+  }
+  .style-tb-city{
+    width: 20%;
+  }
+  .style-tb-name{
+    width: 30%;
+  }
+  .header-user-image{
+    margin-right: 15px;
+    float: left;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+  }
+  .info-client span{
+    display: block;
+  }
+  .user-name{
+    font-weight: 400;
   }
 }
 .dropdown-menu-edit{
   position: relative;
-  .d-inline-block{
+  .dropdown-edit-i{
+    display: inline-block;
     color: #838383;
   }
   .dropdown-menu-list{
     position: absolute;
-    top: 0;
-    left: -124px;
+    top: 18px;
+    left: -68px;
     background: #fff;
     padding: 10px;
     box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
@@ -1077,3 +1105,4 @@ form div.required label.control-label:after {
     }
   }
 }
+

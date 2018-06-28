@@ -681,7 +681,7 @@ form div.required label.control-label:after {
   font-size: 13px;
   color: #8f8f8f;
 }
-.header-container nav > ul > li > a > .header-user-image {
+.header-user-image {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -986,7 +986,7 @@ form div.required label.control-label:after {
   border-top: 0;
 }
 .table-clients tr td {
-  width: 12%;
+  width: 13%;
   display: inline-block;
 }
 .table-clients thead tr {
@@ -1024,17 +1024,46 @@ form div.required label.control-label:after {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-color: transparent;
+  float: right;
+}
+.table-clients .td-edit {
+  text-align: right;
+  padding: 1.5rem 0.95rem .95rem .95rem;
+  width: 100px;
+}
+.table-clients .tb-social-networks {
+  text-align: center;
+}
+.table-clients .style-tb-city {
+  width: 20%;
+}
+.table-clients .style-tb-name {
+  width: 30%;
+}
+.table-clients .header-user-image {
+  margin-right: 15px;
+  float: left;
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+}
+.table-clients .info-client span {
+  display: block;
+}
+.table-clients .user-name {
+  font-weight: 400;
 }
 .dropdown-menu-edit {
   position: relative;
 }
-.dropdown-menu-edit .d-inline-block {
+.dropdown-menu-edit .dropdown-edit-i {
+  display: inline-block;
   color: #838383;
 }
 .dropdown-menu-edit .dropdown-menu-list {
   position: absolute;
-  top: 0;
-  left: -124px;
+  top: 18px;
+  left: -68px;
   background: #fff;
   padding: 10px;
   box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
