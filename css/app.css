@@ -764,8 +764,7 @@ form div.required label.control-label:after {
 .cardbox-main-title {
   color: #7c7c7c;
   font-size: 16px;
-  margin-bottom: 24px;
-  line-height: 36px;
+  margin-top: 11px;
   font-weight: 300;
   display: inline-block;
 }
@@ -843,7 +842,7 @@ form div.required label.control-label:after {
   color: #838383;
 }
 .btn-group-pages {
-  margin-bottom: 24px;
+  margin-top: 11px;
 }
 .btn-group-pages a {
   display: inline-block;
@@ -1082,8 +1081,4 @@ form div.required label.control-label:after {
 .i-group-pages .btn-group-pages {
   display: inline-block;
   margin-bottom: 0;
-  margin-top: 11px;
-}
-.i-group-pages .cardbox-main-title {
-  margin-top: 11px;
 }
