@@ -1105,7 +1105,6 @@ form div.required label.control-label:after {
 .d-selection .views-dropdown-menu {
   position: absolute;
   background: #fff;
-  padding: 10px;
   box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
   z-index: 10;
   width: 100%;
@@ -1116,5 +1115,9 @@ form div.required label.control-label:after {
 .d-selection .views-dropdown-menu li a {
   color: #838383;
   font-size: 14px;
-  padding: 5px;
+  padding: 15px;
+  display: block;
+}
+.d-selection .views-dropdown-menu li a:hover {
+  background: #f7f7f7;
 }
