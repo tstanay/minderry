@@ -661,6 +661,13 @@ form div.required label.control-label:after {
   max-width: 85%;
 }
 /*--- admin panel --*/
+@maincolor-adminpanel: #838383;
+a, p, span{
+  color: @maincolor-adminpanel;
+}
+a:hover{
+  color: @maincolor-adminpanel;
+}
 .layout-container {
   position: relative;
   width: 100%;
@@ -686,7 +693,6 @@ form div.required label.control-label:after {
     text-decoration: none;
     color: inherit;
     font-size: 13px;
-    color: #8f8f8f;
   }
 }
 .header-user-image {
@@ -738,7 +744,6 @@ form div.required label.control-label:after {
   }
   ul li a{
     display: block;
-    color: #878787;
     font-size: 14px;
     padding: 16px 16px 16px 34px;
     border-left: solid 2px transparent;
@@ -832,7 +837,7 @@ form div.required label.control-label:after {
 }
 .table-merchant{
   thead>tr>th{
-    color: #838383;
+    color: @maincolor-adminpanel;
     font-size: 15px;
     font-weight: 400;
   }
@@ -840,7 +845,7 @@ form div.required label.control-label:after {
     background-color: #f9f9f9;
   }
   tbody>tr{
-    color: #838383;
+    color: @maincolor-adminpanel;
     font-size: 14px;
     font-weight: 300;
   }
@@ -1105,7 +1110,6 @@ form div.required label.control-label:after {
     background: #fff;
     box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
     a{
-      color: #838383;
       font-size: 14px;
       padding: 15px;
       display: block;
@@ -1133,7 +1137,6 @@ form div.required label.control-label:after {
     margin-right: 20px;
   }
   p{
-    color: #838383;
     font-size: 15px;
     font-weight: 400;
   }
@@ -1184,10 +1187,10 @@ form div.required label.control-label:after {
     border: 0;
     padding: 0;
     a {
-      color: #838383;
       font-size: 14px;
       padding: 15px;
       display: block;
+      color: @maincolor-adminpanel;
       &:hover {
         background: #f7f7f7;
       }
@@ -1200,6 +1203,6 @@ form div.required label.control-label:after {
     background: #f8f8f8;
     font-size: 14px;
     border-radius: 3px;
-    color: #838383;
+    color: @maincolor-adminpanel;
   }
 }

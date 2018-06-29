@@ -653,6 +653,14 @@ form div.required label.control-label:after {
   max-width: 85%;
 }
 /*--- admin panel --*/
+a,
+p,
+span {
+  color: #838383;
+}
+a:hover {
+  color: #838383;
+}
 .layout-container {
   position: relative;
   width: 100%;
@@ -679,7 +687,6 @@ form div.required label.control-label:after {
   text-decoration: none;
   color: inherit;
   font-size: 13px;
-  color: #8f8f8f;
 }
 .header-user-image {
   width: 32px;
@@ -723,7 +730,6 @@ form div.required label.control-label:after {
 }
 .sidebar-nav ul li a {
   display: block;
-  color: #878787;
   font-size: 14px;
   padding: 16px 16px 16px 34px;
   border-left: solid 2px transparent;
@@ -1072,7 +1078,6 @@ form div.required label.control-label:after {
   box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
 }
 .dropdown-menu-edit .dropdown-menu-list a {
-  color: #838383;
   font-size: 14px;
   padding: 15px;
   display: block;
@@ -1097,7 +1102,6 @@ form div.required label.control-label:after {
   margin-right: 20px;
 }
 .d-selection p {
-  color: #838383;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1145,10 +1149,10 @@ form div.required label.control-label:after {
   padding: 0;
 }
 .d-selection .dropdown-menu a {
-  color: #838383;
   font-size: 14px;
   padding: 15px;
   display: block;
+  color: #838383;
 }
 .d-selection .dropdown-menu a:hover {
   background: #f7f7f7;
