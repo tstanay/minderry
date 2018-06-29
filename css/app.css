@@ -655,7 +655,8 @@ form div.required label.control-label:after {
 /*--- admin panel --*/
 a,
 p,
-span {
+span,
+label {
   color: #838383;
 }
 a:hover {
