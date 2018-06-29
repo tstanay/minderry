@@ -668,6 +668,9 @@ form div.required label.control-label:after {
 .layout-container a:hover {
   color: #838383;
 }
+.layout-container .add-tablefile {
+  color: #fff;
+}
 .header-container {
   position: relative;
   background: #fff;
@@ -861,7 +864,6 @@ form div.required label.control-label:after {
   display: inline-block;
   width: 45px;
   height: 45px;
-  color: #fff;
   line-height: 45px;
   background: #5fb870;
   text-align: center;
@@ -1167,3 +1169,4 @@ form div.required label.control-label:after {
   border-radius: 3px;
   color: #838383;
 }
+/* -- Page-- */
