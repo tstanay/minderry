@@ -428,6 +428,7 @@ form div.required label.control-label:after {
   width: 100%;
   height: 100%;
   min-height: 200px;
+  background: #8c8c8c0f;
 }
 .task-card .task-data {
   padding: 30px;
@@ -1121,19 +1122,33 @@ form div.required label.control-label:after {
   border-radius: 0;
 }
 .btn-outline-secondary.custom-views {
-  border: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
   border-bottom: solid 1px #e7e7e7;
-  padding: 8px 0;
+  padding: 8px 10px;
   color: #ababab;
   width: 100%;
   text-align: left;
   font-size: 15px;
+  transition: all .5s;
 }
 .btn-outline-secondary.custom-views:focus {
   box-shadow: none;
+  border-color: #e7e7e7;
 }
 .btn-outline-secondary.custom-views:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
+  border-color: transparent;
+}
+.main-container .d-selection button {
+  border-color: transparent;
+  border-radius: 0;
   background-color: transparent;
+  border-bottom-color: #e7e7e7;
+  transition: all .5s;
 }
 .dropdown-toggle.custom-views::after {
   display: none;
@@ -1143,17 +1158,18 @@ form div.required label.control-label:after {
 .btn-outline-secondary.custom-views:not(:disabled):not(.disabled):active,
 .show > .btn-outline-secondary.custom-views.dropdown-toggle:focus,
 .show > .btn-outline-secondary.custom-views.dropdown-toggle {
-  background-color: transparent;
+  background-color: #fff;
+  border-radius: 3px;
   box-shadow: none;
-  border-color: #e7e7e7;
+  border: solid 1px #e7e7e7;
   color: #ababab;
 }
 .d-selection .dropdown-menu {
   background: #fff;
   box-shadow: 0 5px 25px 0 rgba(123, 123, 123, 0.15);
   z-index: 10;
-  width: 90%;
-  border-radius: 2px;
+  width: 90.5%;
+  border-radius: 5px;
   border: 0;
   padding: 0;
 }
