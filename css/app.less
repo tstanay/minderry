@@ -1177,7 +1177,7 @@ form div.required label.control-label:after {
   transition: all .5s;
   &:focus{
     box-shadow: none;
-    border-color: #e7e7e7;
+    border-color: #d5d5d5;
   }
   &:hover{
     background-color: #fff;
@@ -1190,7 +1190,7 @@ form div.required label.control-label:after {
   border-color: transparent;
   border-radius: 0;
   background-color: transparent;
-  border-bottom-color: #e7e7e7;
+  border-bottom-color: #d5d5d5;
   transition: all .5s;
 }
 .dropdown-toggle.custom-views::after{
@@ -1204,7 +1204,7 @@ form div.required label.control-label:after {
   background-color: #fff;
   border-radius: 3px;
   box-shadow: none;
-  border: solid 1px #e7e7e7;
+  border: solid 1px #d5d5d5;
 
   color: #ababab;
 }
@@ -1264,5 +1264,23 @@ form div.required label.control-label:after {
       border-color: #2278ec;
       color: #2278ec;
     }
+  }
+}
+.el-input{
+  position: relative;
+  width: 100%;
+  .form-control{
+    padding-left: 10px;
+    padding-right: 22px;
+    border-bottom-color: #d5d5d5;
+    border-radius: 0;
+  }
+  .el-input-refix{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 7px;
+    display: inline-block;
   }
 }
