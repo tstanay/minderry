@@ -724,7 +724,6 @@ form div.required label.control-label:after {
 }
 .brand-header {
   height: 60px;
-  border-bottom: solid 1px #f0f0f0;
   text-align: center;
   float: left;
   width: 220px;
