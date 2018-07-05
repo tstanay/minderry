@@ -1,6 +1,11 @@
 (function ($) {
 	$(document).ready(function () {
 		task.init();
+
+        $(".show-search-bar").click(function(){
+            $(".search-bar").toggle();
+        });
+
 	});
 })(jQuery);
 
