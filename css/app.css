@@ -1352,6 +1352,7 @@ form div.required label.control-label:after {
   border-bottom: dashed 1px #6a6a6a;
   color: #6a6a6a;
   padding: .375rem 0;
+  margin-left: .95rem;
 }
 .btn.show-search-bar:focus {
   outline: 0;
