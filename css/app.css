@@ -1347,3 +1347,19 @@ form div.required label.control-label:after {
   font-size: 1.75rem;
   font-weight: 500;
 }
+.btn.show-search-bar {
+  background: transparent;
+  border-bottom: dashed 1px #6a6a6a;
+  color: #6a6a6a;
+  padding: .375rem 0;
+}
+.btn.show-search-bar:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn.show-search-bar i {
+  margin-left: 7px;
+}
+.search-bar {
+  display: none;
+}
