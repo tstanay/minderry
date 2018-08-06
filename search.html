@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Minderry" name="application-name">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="awCiA8VxDEb098dkNNEUqpJDM-1zG1lweKM3ZuhSeUAHYcUuqxJBEsGhog1YhGCfxQV53CNOHgQU8kALijwwNw==">
+    <title>Minderry</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="assets/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/glide.core.min.css" rel="stylesheet">
+    <meta content="Minderry" name="description">
+    <meta content="" name="keywords">
+    <meta content="Minderry" name="title">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<div class="layout-container">
+    <header class="header-container">
+        <div class="brand-header">
+            <a href="/" class="navbar-brand my-0 mr-lg-auto">
+                <img src="img/logo.svg" width="200" height="60" class="d-inline-block align-middle" alt="">
+            </a>
+        </div>
+        <nav>
+            <a id="header-search">
+
+            </a>
+            <ul class="header-top-menu float-right">
+                <li><a href="#"></a></li>
+                <li>
+                    <a href="#">
+                        <img class="header-user-image" src="img/01.jpg" alt="header-user-image" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Jennie Tompson</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar-container">
+
+        <div class="sidebar-content">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-th-large"></i></span>
+                            <span>Уведомления</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">
+                            <span class="nav-icon"><i class="fa fa-bookmark"></i></span>
+                            <span>Задачи</span>
+                        </a>
+                        <ul class="sub-menu"><li><a href="/task/task/index">Задания</a></li><li><a href="/task/photo/index">Фотографии</a></li><li><a href="/task/category/index">Категории</a></li><li><a href="/task/status/index?status=0">В работе</a></li><li><a href="/task/status/index?status=1">Ждёт приемки</a></li><li><a href="/task/status/index?status=2">Ждёт оплату</a></li><li><a href="/task/status/index?status=3">Выполненные</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Вебм. задачи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Фрилансеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Акты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-area-chart"></i></span>
+                            <span>Статистика</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars"></i></span>
+                            <span>Компания</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-user"></i></span>
+                            <span>Личные данные</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main-container">
+        <section class="section-container">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12 col-md-12">
+                        <div class="cardbox">
+                            <h4 class="cardbox-main-title mb-4">Search</h4>
+                            <div class="cardbox-body pt-4 pb-3 pl-0 pr-0">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_search">
+                                            <input class="form-control search-input pb-4" placeholder="Введите для поиска ЛМ" value="" type="search">
+                                            <span class="search-icon"><i class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 pl-4 pr-4">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Бренд</label>
+                                            <input class="form-control" placeholder="Бизнес" name="" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Менеджер</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Анна Плетнева</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 ml-5">
+                                        <div class="form-group">
+                                            <label>Дата</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Начало</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mr-5">
+                                        <div class="form-group">
+                                            <select class="form-control mar-t" name="select" required="">
+                                                <option value="">Окончание</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Тематика</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Бизнес</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <hr/>
+                                <div class="row mt-3 pt-3 pl-4 pr-4">
+
+                                    <div class="col-md-12">
+                                        <div class="float-right">
+                                            <p class="btn-text-reset mr-3">
+                                                <span>Сбросить</span>
+                                            </p>
+                                            <a class="btn btn-info-card" href="#">Искать</a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="input-group mb-3">
+                                                    <input class="form-control" type="text" placeholder="теги через запятую" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success" type="button">Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="bootstrap-tagsinput">
+                                                    <span class="label-info">Техно<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                    <span class="label-info">Смартфоны<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                    <span class="label-info">apple<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-12 col-md-12">
+                        <div class="cardbox">
+                            <h4 class="cardbox-main-title mb-4">Search</h4>
+                            <div class="cardbox-body pt-4 pb-3 pl-0 pr-0">
+                                <div class="row">
+                                    <div class="col-md-12" style="position: relative;">
+                                        <div class="form-group form-group_search">
+                                            <input class="form-control search-input pb-4" placeholder="Введите для поиска ЛМ" value="" type="search">
+                                            <span class="search-icon"><i class="fa fa-search"></i></span>
+                                        </div>
+
+
+                                        <div style="position: absolute; top:-12px;right:31px; width: 300px;">
+                                            <div class="d-selection custom-select-i">
+                                                <button class="btn btn-outline-secondary dropdown-toggle custom-views" style="border: 0;border-radius: 0;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                                    <span>Соц. сети:</span>
+
+                                                    <div class="icon-group-append">
+                                                        <i class="fa fa-instagram"></i>
+                                                        <i class="fa fa-youtube-play"></i>
+                                                    </div>
+
+                                                    <i class="fa fa-angle-down mt-2"></i>
+
+
+
+                                                </button>
+                                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(15px, 71px, 0px);">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 pl-4 pr-4">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Подписчики</label>
+                                            <input class="form-control" placeholder="20 000 - 1 000 000" name="email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-4">
+                                        <input type="text" id="range_50" name="example_name" value="" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Тематика</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Бизнес</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Возраст аудитории</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Выбрано (2)</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>YouTube</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Тип контента</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2 pl-4 pr-4">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Просмотры</label>
+                                            <input class="form-control" placeholder="50 000 - 5 000 000" name="email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-4">
+                                        <input type="text" id="range_51" name="example_name" value="" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Город</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Выбрано (5)</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Пол аудитории</label>
+                                            <div class="checkbox ">
+                                                <input type="checkbox" id="SgForm[categories][1]" name="SgForm[categories][1]" value="1">
+                                                <label for="SgForm[categories][1]">Муж.</label>
+
+                                                <input type="checkbox" id="SgForm[categories][2]" name="SgForm[categories][2]" value="1">
+                                                <label for="SgForm[categories][2]">Жен.</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Instagram</label>
+                                            <select class="form-control" name="select" required="">
+                                                <option value="">Тип контента</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr/>
+                                <div class="row mt-3 pt-3 pl-4 pr-4">
+
+                                    <div class="col-md-12">
+                                        <div class="float-right">
+                                            <p class="btn-text-reset mr-3">
+                                                <span>Сбросить</span>
+                                            </p>
+                                            <a class="btn btn-info-card" href="#">Искать</a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="input-group mb-3">
+                                                    <input class="form-control" type="text" placeholder="теги через запятую" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success" type="button">Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="bootstrap-tagsinput">
+                                                    <span class="label-info">Техно<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                    <span class="label-info">Смартфоны<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                    <span class="label-info">apple<span data-role="remove"><i class="fa fa-close"></i></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-12 col-md-12">
+                        <div class="cardbox">
+                            <h4 class="cardbox-main-title mb-4">Tabs</h4>
+                            <div class="cardbox-body">
+                                <div class="tabbable-panel">
+                                    <div class="tabbable-line">
+                                        <ul class="nav nav-tabs ">
+                                            <li class="active">
+                                                <a href="#tab_default_1" data-toggle="tab">Подборки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab_default_2" data-toggle="tab">Компании</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab_default_3" data-toggle="tab">Архивы</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab_default_1">
+
+                                                <div class="tab-pane_cardbox mt-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="brand-block">
+                                                              <h4 class="cardbox-main-title ">Проект для интернет магазина "Молот"</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-xs-12">
+                                                            <div class="table">
+                                                                <table class="table table-merchant style-bold">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <label>Бренд</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Тематика</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Тип контента</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Период действия</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Стоимость</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>KPI</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Теги</label>
+                                                                        </th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr class="gradeA odd">
+                                                                        <td>Name brand</td>
+                                                                        <td>Бизнес</td>
+                                                                        <td>Тематический ролик</td>
+                                                                        <td>12.08-25.08</td>
+                                                                        <td>1 344 134 руб.</td>
+                                                                        <td>24%</td>
+                                                                        <td>Tech, технологии, смартфоны, обзоры</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="tab-pane_cardbox mt-4">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="brand-block">
+                                                                <h4 class="cardbox-main-title ">Проект для интернет магазина "Молот"</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-xs-12">
+                                                            <div class="table">
+                                                                <table class="table table-merchant style-bold">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <label>Бренд</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Тематика</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Тип контента</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Период действия</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Стоимость</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>KPI</label>
+                                                                        </th>
+                                                                        <th>
+                                                                            <label>Теги</label>
+                                                                        </th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr class="gradeA odd">
+                                                                        <td>Name brand</td>
+                                                                        <td>Бизнес</td>
+                                                                        <td>Тематический ролик</td>
+                                                                        <td>12.08-25.08</td>
+                                                                        <td>1 344 134 руб.</td>
+                                                                        <td>24%</td>
+                                                                        <td>Tech, технологии, смартфоны, обзоры</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab_default_2">
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="float-right">
+                                                            <div class="float-right list-group-style">
+                                                                <a class="btn btn-info-card" href="#">Подборка</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab_default_3">
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="float-right">
+                                                            <div class="float-right list-group-style">
+                                                                <a class="btn btn-info-card" href="#">Подборка</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+</div>
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49178818 = new Ya.Metrika2({
+                    id:49178818,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49178818" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/yii.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/ion.rangeSlider.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-dialog.js"></script>
+<script src="js/glide.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

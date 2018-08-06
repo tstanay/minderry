@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Minderry" name="application-name">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="awCiA8VxDEb098dkNNEUqpJDM-1zG1lweKM3ZuhSeUAHYcUuqxJBEsGhog1YhGCfxQV53CNOHgQU8kALijwwNw==">
+    <title>Minderry</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/glide.core.min.css" rel="stylesheet">
+    <meta content="Minderry" name="description">
+    <meta content="" name="keywords">
+    <meta content="Minderry" name="title">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<div class="layout-container">
+    <header class="header-container">
+        <div class="brand-header">
+            <a href="/" class="navbar-brand my-0 mr-lg-auto">
+                <img src="img/logo.svg" width="200" height="60" class="d-inline-block align-middle" alt="">
+            </a>
+        </div>
+        <nav>
+            <a id="header-search">
+
+            </a>
+            <ul class="header-top-menu float-right">
+                <li><a href="#"></a></li>
+                <li>
+                    <a href="#">
+                        <img class="header-user-image" src="img/01.jpg" alt="header-user-image" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Jennie Tompson</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar-container">
+
+        <div class="sidebar-content">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-th-large"></i></span>
+                            <span>Уведомления</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">
+                            <span class="nav-icon"><i class="fa fa-bookmark"></i></span>
+                            <span>Задачи</span>
+                        </a>
+                        <ul class="sub-menu"><li><a href="/task/task/index">Задания</a></li><li><a href="/task/photo/index">Фотографии</a></li><li><a href="/task/category/index">Категории</a></li><li><a href="/task/status/index?status=0">В работе</a></li><li><a href="/task/status/index?status=1">Ждёт приемки</a></li><li><a href="/task/status/index?status=2">Ждёт оплату</a></li><li><a href="/task/status/index?status=3">Выполненные</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Вебм. задачи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Фрилансеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars" style="font-size: 14px;"></i></span>
+                            <span>Акты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-area-chart"></i></span>
+                            <span>Статистика</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-bars"></i></span>
+                            <span>Компания</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-icon"><i class="fa fa-user"></i></span>
+                            <span>Личные данные</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main-container">
+        <section class="section-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7 col-md-4">
+                        <div class="cardbox">
+                            <h4 class="cardbox-main-title mb-4">Setting</h4>
+                            <div class="cardbox-body">
+                                <div class="cardbox-title">новый блогер</div>
+                                <form class="form-register" id="w0" action="/user/blogger/create" method="post">
+                                    <div class="form-group field-blogger-email required">
+                                        <label class="control-label" for="blogger-email">Email</label>
+                                        <div>
+                                            <input type="text" id="blogger-email" class="form-control" name="Blogger[email]" maxlength="255" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group field-blogger-phone">
+                                        <label class="control-label" for="blogger-phone">Телефон</label>
+                                        <div>
+                                            <input type="text" id="blogger-phone" class="form-control" name="Blogger[phone]" data-plugin-inputmask="inputmask_83f23ccf" aria-invalid="false">
+                                        </div>
+                                    </div>
+                                    <div class="form-group field-blogger-specialization required">
+                                        <label class="control-label" for="blogger-specialization">Категория</label>
+                                        <span id="parent-s2-togall-blogger-specialization" style="display:none"></span><input type="hidden" name="Blogger[specialization]" value=""><select id="blogger-specialization" class="form-control select2-hidden-accessible" name="Blogger[specialization][]" multiple="" size="4" aria-required="true" data-s2-options="s2options_c4acac00" data-krajee-select2="select2_22186148" style="display:none" tabindex="-1" aria-hidden="true" aria-invalid="false">
+                                        <option value="1">Мода / красота</option>
+                                        <option value="2">Еда / напитки</option>
+                                        <option value="3">Здоровье</option>
+                                        <option value="4">Дети</option>
+                                        <option value="5">Путешествия</option>
+                                        <option value="6">Творчество</option>
+                                        <option value="7">Спорт</option>
+                                        <option value="8">Животные</option>
+                                        <option value="9">Техника / электроника</option>
+                                        <option value="10">Дом / ремонт</option>
+                                        <option value="11">Видеоигры</option>
+                                        <option value="12">Образование</option>
+                                        <option value="13">Авто / мото</option>
+                                        <option value="14">Бизнес / финансы</option>
+                                    </select><span class="select2 select2-container select2-container--krajee select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="Еда / напитки"><span class="select2-selection__choice__remove" role="presentation">×</span>Еда / напитки</li><li class="select2-selection__choice" title="Здоровье"><span class="select2-selection__choice__remove" role="presentation">×</span>Здоровье</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+                                        <div class="help-block"></div>
+                                    </div>
+
+                                    <div class="form-group required">
+                                        <label class="control-label">Охват</label>
+                                        <div>
+                                            <input type="text" id="blogger-coverage" class="form-control" name="Blogger[coverage]" maxlength="255" aria-required="true" aria-invalid="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label">Подписчики</label>
+                                        <div>
+                                            <input type="text" id="blogger-subscribers" class="form-control" name="Blogger[subscribers]" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label">Вовлеченность</label>
+                                        <div>
+                                            <input type="text" id="blogger-involvement" class="form-control" name="Blogger[involvement]" maxlength="255" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-success mb-1 social-add"><i class="fa fa-plus"></i></button>
+
+                                    <div class="social-list"><div class="form-group row"><div class="col-11 field-blogger-social-0">
+                                        <label class="control-label" for="blogger-social-0">Соц. сеть</label>
+                                        <input type="text" id="blogger-social-0" class="form-control" name="Blogger[social][0]">
+
+                                        <div class="help-block"></div>
+                                    </div><div class="col-1" style="margin-top:33px"><button type="button" class="btn btn-danger social-remove"><i class="fa fa-remove"></i></button></div></div></div>
+
+
+                                    <div class="form-group required">
+                                        <label class="control-label">Стоимость</label>
+                                        <div>
+                                            <input type="text" id="blogger-cost" class="form-control" name="Blogger[cost]" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label">Город</label>
+                                        <div>
+                                            <input type="text" id="blogger-city" class="form-control" name="Blogger[city]" maxlength="255" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group field-blogger-gender required">
+                                        <label class="control-label">Пол</label>
+                                        <input type="hidden" name="Blogger[gender]" value=""><div id="blogger-gender" aria-required="true"><label><input type="radio" name="Blogger[gender]" value="1"> Мужской</label>
+                                        <label><input type="radio" name="Blogger[gender]" value="2"> Женский</label></div>
+
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label">Возраст</label>
+                                        <div>
+                                            <input type="text" id="blogger-age" class="form-control" name="Blogger[age]" aria-required="true" aria-invalid="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Ссылка на профиль</label>
+                                        <div>
+                                            <input type="text" id="blogger-profile_url" class="form-control" name="Blogger[profile_url]" maxlength="255">
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49178818 = new Ya.Metrika2({
+                    id:49178818,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49178818" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/yii.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-dialog.js"></script>
+<script src="js/glide.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
